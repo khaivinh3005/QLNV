@@ -56,7 +56,7 @@ function Validation() {
     }
 
     this.checkPass = function(inputVal,spanID,message) {
-        var pattern = new RegExp(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{6,8}$/);
+        var pattern = new RegExp(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{6,10}$/);
         if(inputVal.match(pattern)) {
             document.getElementById(spanID).innerHTML = "";
             return true;
