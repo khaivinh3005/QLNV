@@ -169,6 +169,7 @@ function capNhatNV() {
         hienThiTable(dsnv.mang);
         setLocalStorage();
         alert("Bạn đã cập nhật thành công");
+        document.querySelector("#btnDong").click();
     }
 }
 
