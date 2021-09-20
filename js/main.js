@@ -100,6 +100,7 @@ function xoaNV(tk) {
 function xemNV(tk) {
     var viTri = dsnv.timViTri(tk);
     var nv = dsnv.mang[viTri];
+    console.log(nv);
 
     getELE("tknv").disabled = true;
     getELE("tknv").value = nv.taiKhoan;
@@ -108,9 +109,9 @@ function xemNV(tk) {
     getELE("password").value = nv.mk;
     getELE("datepicker").value = nv.date;
     getELE("luongCB").value = nv.luong;
-    getELE("chucvu").value = nv.chucvu;
+    getELE("chucvu").value = nv.chucVu;
     getELE("gioLam").value = nv.time;
-
+console.log(getELE("chucvu"))
     document.querySelector(".modal").classList.add("show");
     document.querySelector(".modal").style.display = "block";
     getELE("btnThemNV").disabled = true;
@@ -167,6 +168,7 @@ function capNhatNV() {
         hienThiTable(dsnv.mang);
         setLocalStorage();
         alert("Bạn đã cập nhật thành công");
+        document.querySelector("#btnDong").click();
     }
 }
 
