@@ -87,7 +87,8 @@ function themNhanVien() {
         dsnv.themNV(nv);
         hienThiTable(dsnv.mang);
         setLocalStorage();
-        alert("Bạn đã thêm nhân viên thành công")
+        alert("Bạn đã thêm nhân viên thành công");
+        document.querySelector("#btnDong").click();
     }
 }
 
@@ -168,7 +169,6 @@ function capNhatNV() {
         hienThiTable(dsnv.mang);
         setLocalStorage();
         alert("Bạn đã cập nhật thành công");
-        document.querySelector("#btnDong").click();
     }
 }
 

@@ -80,7 +80,7 @@ function Validation() {
     }
 
     this.checkChucVu = function(inputVal,spanID,message) {
-        if(inputVal == "Sếp" || inputVal =="Trưởng phòng" || inputVal == "Nhân Viên") {
+        if(inputVal == "Sếp" || inputVal =="Trưởng phòng" || inputVal == "Nhân viên") {
             document.getElementById(spanID).innerHTML = "";
             return true;
         } else {
